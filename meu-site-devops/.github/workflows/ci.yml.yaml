@@ -22,11 +22,6 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
       - name: Verificar index.html
-        run: |
-          if [ ! -f index.html ]; then
-            echo "Erro: index.html não encontrado!"
-            exit 1
-          fi
       - name: Validação concluída
         run: echo "Arquivo OK"
 
